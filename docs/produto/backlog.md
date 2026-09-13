@@ -7,7 +7,6 @@ As funcionalidades estão priorizadas seguindo a metodologia **MoSCoW**:
 * **Must Have:** Essenciais para a versão inicial do produto (MVP).
 * **Should Have:** Importantes e de alto valor, planejadas para a sequência imediata.
 * **Could Have:** Diferenciais desejáveis que agregam conveniência ou inovação tecnológica.
-* **Won't Have:** Fora do escopo do primeiro incremento, podendo ser reavaliadas futuramente.
 
 Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produto. As funcionalidades serão detalhadas como histórias de usuário, com critérios de aceitação e estimativas, na Entrega 2.
 
@@ -20,7 +19,7 @@ Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produt
 | **EP01** | **Interface & Experiência do Totem (UI/UX)** | Design visual, ergonomia para telas touchscreen e operação em modo quiosque. | **Must Have** |
 | **EP02** | **Previsão e Monitoramento em Tempo Real** | Integração com a API Olho Vivo (SPTrans) para chegadas, linhas e posições. | **Must Have** |
 | **EP03** | **Acessibilidade Universal & Interação por Voz** | Recursos auditivos e de alto contraste voltados a pessoas com deficiência visual e idosos. | **Should Have** |
-| **EP04** | **Planejamento e Auxílio de Rotas** | Orientações de como chegar a pontos de referência e destinos populares. | **Won't Have** |
+| **EP04** | **Planejamento e Auxílio de Rotas** | Orientações de como chegar a pontos de referência e destinos populares. | **Could Have** |
 
 ---
 
@@ -67,12 +66,12 @@ Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produt
 
 | ID | Funcionalidade | Prioridade |
 | :--- | :--- | :--- |
-| **F13** | Apresentar pontos de referência atendidos por uma linha. | **Won't Have** |
-| **F14** | Sugerir linhas para chegar a um ponto de referência. | **Won't Have** |
-| **F15** | Calcular rotas multimodais combinando ônibus, metrô e caminhada. | **Won't Have** |
+| **F13** | Apresentar pontos de referência atendidos por uma linha. | **Could Have** |
+| **F14** | Sugerir linhas para chegar a um ponto de referência. | **Could Have** |
+| **F15** | Calcular rotas multimodais combinando ônibus, metrô e caminhada. | **Could Have** |
 
 ---
 
 ## Limites do primeiro incremento
 
-O MVP será concentrado em um ponto previamente configurado, permitindo consultar as linhas disponíveis, seus sentidos e as previsões de chegada. Recursos adicionais de acessibilidade serão desenvolvidos se houver tempo após o funcionamento do fluxo principal. Reconhecimento de fala e planejamento de rotas não fazem parte do primeiro incremento e só serão reavaliados depois do diagnóstico com usuários e da análise de viabilidade técnica.
+O MVP será concentrado em um ponto previamente configurado, permitindo consultar as linhas disponíveis, seus sentidos e as previsões de chegada. Recursos adicionais de acessibilidade serão desenvolvidos se houver tempo após o funcionamento do fluxo principal. Reconhecimento de fala e planejamento de rotas são features adicionais que poderemos trabalhar, caso o tempo permita.
