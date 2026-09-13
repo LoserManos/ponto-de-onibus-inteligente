@@ -17,7 +17,7 @@ O problema central do projeto é:
 
 > Como oferecer, diretamente no ponto de ônibus, informação atualizada e acessível sobre as linhas e a previsão de chegada dos veículos sem exigir que o passageiro tenha um celular disponível?
 
-A solução proposta é um totem interativo que apresenta as linhas atendidas pelo ponto, permite consultar uma linha e informa a previsão de chegada dos ônibus. A interface deverá ter texto grande, contraste adequado, fluxo curto e uma alternativa de saída de áudio. O primeiro produto mínimo viável não dependerá de uma LLM nem de reconhecimento de fala: esses recursos ficam como possibilidades de evolução, enquanto a entrega inicial concentra-se em uma consulta confiável à API da SPTrans.
+A solução proposta é um totem interativo que apresenta as linhas atendidas pelo ponto, permite consultar uma linha e informa a previsão de chegada dos ônibus. O fluxo deverá ser curto e legível. Alto contraste, saída de áudio e outras melhorias de acessibilidade serão priorizados depois que a consulta básica estiver funcionando. O primeiro produto mínimo viável não dependerá de uma LLM, reconhecimento de fala ou planejamento de rotas: esses recursos ficam como possibilidades de evolução, enquanto o incremento inicial concentra-se em uma consulta confiável à API da SPTrans.
 
 ### Benefício social esperado
 
@@ -94,7 +94,7 @@ Os perfis são personas de trabalho, não resultados de pesquisa. Eles servem pa
 
 O [backlog inicial](produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
 
-O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada, além dos recursos básicos de acessibilidade. Reconhecimento de fala e cálculo de rotas multimodais foram mantidos como possibilidades futuras, sujeitos ao diagnóstico e à viabilidade técnica.
+O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado. Recursos adicionais de acessibilidade são desejáveis, mas não condicionam a conclusão do fluxo principal. Reconhecimento de fala e planejamento de rotas estão fora desse incremento e só serão reavaliados após o diagnóstico e a análise de viabilidade técnica.
 
 ## 6 Apoio ferramental e processo Scrum
 
@@ -145,7 +145,7 @@ Esta seção define o diagnóstico inicial a ser aplicado antes de fechar a espe
 
 - manter no MVP as necessidades relatadas por mais de um perfil e diretamente relacionadas ao problema central;
 - revisar ou retirar funcionalidades que não sejam compreendidas em um teste de tarefa;
-- tratar acessibilidade como requisito do fluxo principal, não como uma etapa posterior;
+- considerar acessibilidade desde a especificação e priorizar as melhorias indicadas pelo diagnóstico;
 - não registrar áudio, imagem ou informação pessoal para fins de diagnóstico sem consentimento específico.
 
 ## 8 Riscos e próximos passos
