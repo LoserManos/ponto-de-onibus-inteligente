@@ -7,7 +7,7 @@
 **Produto proposto:** sistema web executado em um totem instalado em um ponto de ônibus  
 **Prazo da Entrega 1:** 15/09
 
-Esta entrega define o problema, o público que será atendido, a fonte de dados abertos, as hipóteses iniciais e o plano de trabalho do projeto. Os resultados de entrevistas e observações ainda devem ser coletados; por isso, as afirmações marcadas como hipóteses serão validadas no diagnóstico.
+Esta entrega define o problema, o público que será atendido, a fonte de dados abertos e o planejamento inicial do projeto.
 
 ## 1 Problema e oportunidade
 
@@ -21,7 +21,7 @@ A solução proposta é um totem interativo que apresenta as linhas atendidas pe
 
 ### Benefício social esperado
 
-O projeto pretende reduzir a assimetria de informação no transporte público e ampliar a autonomia de passageiros que não podem ou não querem usar um smartphone durante a espera. A funcionalidade de áudio também cria uma base para uma experiência mais acessível a pessoas com deficiência visual, desde que seja validada com usuários e testada em condições reais de ruído.
+O projeto pretende reduzir a assimetria de informação no transporte público e ampliar a autonomia de passageiros que não podem ou não querem usar um smartphone durante a espera. Caso seja implementada, a funcionalidade de áudio poderá tornar a experiência mais acessível a pessoas com deficiência visual.
 
 ## 2 Escolha da API de dados abertos
 
@@ -88,13 +88,13 @@ Foram definidos dois perfis complementares para orientar as decisões de produto
 - [Mapa de empatia do passageiro Arthur](../produto/mapa-de-empatia/mapa-transeunte.md)
 - [Mapa de empatia do passageiro com deficiência visual Kleber](../produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
 
-Os perfis são personas de trabalho, não resultados de pesquisa. Eles servem para explicitar hipóteses que serão verificadas no diagnóstico.
+Os perfis são personas de trabalho utilizadas para representar necessidades relevantes dos públicos considerados pelo grupo.
 
 ## 5 Backlog inicial de funcionalidades
 
 O [backlog inicial](../produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
 
-O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado. Recursos adicionais de acessibilidade são desejáveis, mas não condicionam a conclusão do fluxo principal. Reconhecimento de fala e planejamento de rotas estão fora desse incremento e só serão reavaliados após o diagnóstico e a análise de viabilidade técnica.
+O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado. Recursos adicionais de acessibilidade são desejáveis, mas não condicionam a conclusão do fluxo principal. Reconhecimento de fala e planejamento de rotas poderão ser considerados se houver tempo e viabilidade técnica.
 
 ## 6 Apoio ferramental e processo Scrum
 
@@ -102,69 +102,20 @@ O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de ch
 
 - **GitHub:** repositório, branches, pull requests e histórico do código.
 - **GitHub Issues:** uma issue por funcionalidade, defeito ou tarefa de documentação.
-- **GitHub Projects:** quadro Kanban associado ao repositório.
+- **GitHub Milestones:** agrupamento das issues de cada entrega da disciplina.
+- **GitHub Projects:** quadro Kanban que será criado para acompanhar visualmente as tarefas.
 - **Markdown:** documentação versionada junto ao projeto.
 
 O uso dessas ferramentas está detalhado no documento de [ferramentas para gestão](../gestao/ferramentas-para-gestao.md).
 
-O quadro deverá usar as colunas `Backlog`, `Pronto para Sprint`, `Em andamento`, `Em revisão` e `Concluído`. Cada item deve apontar para uma issue e para o pull request correspondente quando houver código.
+Cada tarefa deve ser registrada em uma issue e associada à milestone correspondente. Quando houver alteração no repositório, a issue também deve apontar para o pull request relacionado. O quadro do GitHub Projects será organizado nas colunas `Backlog`, `Em andamento`, `Em revisão` e `Concluído`.
 
 ### Organização Scrum inicial
 
-- **Sprint:** ciclos curtos de uma semana, com planejamento no início e revisão retrospectiva ao final.
-- **Planejamento da Sprint:** selecionar itens de maior prioridade que tenham critério de aceitação claro.
-- **Revisão:** demonstrar o incremento funcionando e registrar decisões ou impedimentos.
-- **Retrospectiva:** registrar uma melhoria de processo para a próxima Sprint.
-- **Definition of Done:** item implementado, revisado por outro integrante, testado no fluxo relevante, documentado quando necessário e integrado à branch principal.
-
-Os nomes dos integrantes e a distribuição de papéis devem ser preenchidos pelo grupo no GitHub, pois não constam no repositório atual.
-
-## 7 Avaliação de diagnóstico
-
-Esta seção define o diagnóstico inicial a ser aplicado antes de fechar a especificação da Entrega 2. Ela separa o que já é decisão do projeto das hipóteses que ainda precisam de evidência.
-
-### Hipóteses a validar
-
-| Código | Hipótese | Evidência planejada |
-| --- | --- | --- |
-| H1 | Passageiros têm dificuldade para obter uma previsão confiável sem abrir um aplicativo no celular. | Entrevistas curtas e observação em pontos de ônibus. |
-| H2 | O risco percebido de furto ou a falta de dados móveis reduz o uso do celular durante a espera. | Pergunta direta sobre contexto de uso e alternativas adotadas. |
-| H3 | Um fluxo com poucas opções é mais útil no ponto do que uma tela com muitas informações. | Teste de tarefa com protótipo de baixa fidelidade. |
-| H4 | A saída de áudio é necessária para que o totem seja útil a pessoas com deficiência visual. | Entrevista com usuários ou entidade especializada e teste com áudio ambiente. |
-| H5 | A previsão da API é compreensível quando apresentada com horário de atualização e destino da linha. | Teste de compreensão com cenários de consulta. |
-
-### Roteiro de coleta
-
-1. Entrevistar pelo menos cinco passageiros com perfis variados, sem coletar nome ou contato.
-2. Perguntar como a pessoa escolhe uma linha, como verifica atrasos e o que faz quando não tem acesso ao celular.
-3. Observar, sem registrar imagens identificáveis, as dúvidas recorrentes e o tempo necessário para obter informação no ponto.
-4. Realizar um teste de tarefa com protótipo: “encontre a próxima chegada da linha que vai para o seu destino”.
-5. Registrar achados, frequência, evidência e decisão tomada no backlog.
-
-### Critérios de decisão
-
-- manter no MVP as necessidades relatadas por mais de um perfil e diretamente relacionadas ao problema central;
-- revisar ou retirar funcionalidades que não sejam compreendidas em um teste de tarefa;
-- considerar acessibilidade desde a especificação e priorizar as melhorias indicadas pelo diagnóstico;
-- não registrar áudio, imagem ou informação pessoal para fins de diagnóstico sem consentimento específico.
-
-## 8 Riscos e próximos passos
-
-| Risco | Impacto | Mitigação inicial |
-| --- | --- | --- |
-| Token ou serviço da API indisponível | Alto | Criar uma camada de acesso isolada, mensagem de erro e dados de teste apenas para desenvolvimento. |
-| Previsão sem veículos ou com atraso | Alto | Mostrar horário de atualização, estado vazio e ação de atualizar. |
-| Ruído no ponto prejudicar o áudio | Médio | Testar volume, repetição, fone e alternativa visual de alto contraste. |
-| Escopo crescer para um planejador completo | Alto | Manter o MVP limitado a ponto, linha, sentido e previsão. |
-| Inclusão acidental de token no Git | Alto | Usar variáveis de ambiente, revisão de pull request e verificação antes do push. |
-
-Próximos passos para a Entrega 2:
-
-1. realizar o diagnóstico e registrar resultados reais;
-2. transformar os itens priorizados em user stories completas;
-3. produzir protótipo de média ou alta fidelidade;
-4. definir tecnologias e arquitetura inicial;
-5. obter um token de desenvolvimento da SPTrans sem publicá-lo no repositório.
+- **Backlog:** as funcionalidades são mantidas e priorizadas no GitHub.
+- **Organização do trabalho:** no início de cada ciclo, o grupo seleciona os itens que pretende concluir.
+- **Acompanhamento:** as atualizações são registradas de forma assíncrona nas issues e pull requests.
+- **Revisão:** antes de cada entrega, o grupo verifica o que foi concluído e ajusta o backlog.
 
 ## Checklist da Entrega 1
 
@@ -172,7 +123,4 @@ Próximos passos para a Entrega 2:
 - [x] Identificação do público-alvo.
 - [x] Mapas de empatia.
 - [x] Estrutura inicial do backlog.
-- [x] Ferramenta de gestão do projeto e processo Scrum.
-- [x] Plano de avaliação de diagnóstico.
-- [ ] Preencher integrantes e papéis da equipe.
-- [ ] Executar entrevistas e substituir hipóteses por achados observados.
+- [x] Ferramenta de apoio à gestão do projeto.
