@@ -85,31 +85,16 @@ Passageiros que aguardam ônibus em pontos movimentados e precisam de uma respos
 
 Foram definidos dois perfis complementares para orientar as decisões de produto:
 
-- [Mapa de empatia do passageiro Arthur](../mapa-de-empatia/mapa-transeunte.md)
-- [Mapa de empatia do passageiro com deficiência visual Kleber](../mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
+- [Mapa de empatia do passageiro Arthur](produto/mapa-de-empatia/mapa-transeunte.md)
+- [Mapa de empatia do passageiro com deficiência visual Kleber](produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
 
 Os perfis são personas de trabalho, não resultados de pesquisa. Eles servem para explicitar hipóteses que serão verificadas no diagnóstico.
 
 ## 5 Backlog inicial de funcionalidades
 
-O backlog abaixo é inicial. A prioridade foi definida pelo valor para o MVP e pela dependência da API. A estimativa em pontos será refinada pelo grupo durante o primeiro planejamento de Sprint.
+O [backlog inicial](produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
 
-| ID | História ou funcionalidade | Prioridade | Critério de aceitação inicial |
-| --- | --- | --- | --- |
-| F01 | Como passageiro, quero ver as linhas atendidas pelo ponto para escolher uma opção de viagem. | Alta | O totem exibe as linhas configuradas para o ponto e o sentido de cada uma. |
-| F02 | Como passageiro, quero buscar uma linha por número ou nome para encontrá-la rapidamente. | Alta | Uma busca válida retorna as linhas correspondentes e uma busca sem resultado informa isso. |
-| F03 | Como passageiro, quero ver o destino e os pontos principais de uma linha para confirmar se ela me atende. | Alta | A tela mostra o sentido, o destino e os pontos retornados pela API. |
-| F04 | Como passageiro, quero consultar a previsão de chegada da linha no ponto para decidir se espero ou procuro alternativa. | Alta | A tela mostra horário de atualização e previsão; falhas são comunicadas sem dados inventados. |
-| F05 | Como pessoa com baixa visão, quero usar texto grande e alto contraste para ler a informação. | Alta | O fluxo principal atende contraste e tamanho definidos pelo grupo e não depende apenas de cor. |
-| F06 | Como pessoa com deficiência visual, quero ouvir as opções e a previsão para consultar o totem com autonomia. | Média | Existe uma forma de ativar a leitura das opções e da previsão pelo alto-falante ou fone disponível. |
-| F07 | Como passageiro, quero refazer a consulta quando a API estiver indisponível para saber se o problema foi temporário. | Alta | A interface informa a falha, não apresenta uma previsão antiga como atual e oferece nova tentativa. |
-| F08 | Como responsável pelo sistema, quero configurar o ponto e proteger o token para operar o totem com segurança. | Alta | O ponto pode ser configurado fora do código e o token não aparece no repositório nem no navegador. |
-| F09 | Como passageiro, quero retornar ao início após um período sem interação para que o próximo usuário encontre uma tela limpa. | Média | O sistema retorna ao início depois de um tempo configurável sem interação. |
-| F10 | Como equipe, queremos registrar consultas de teste sem dados pessoais para avaliar a solução. | Baixa | Os registros não armazenam áudio, nome ou identificador de passageiro sem consentimento explícito. |
-
-### Fora do MVP
-
-Reconhecimento de fala, interpretação de destinos por LLM, cálculo de rota multimodal, pagamento, cadastro de usuário e notificações personalizadas não fazem parte do primeiro incremento. Podem entrar no backlog futuro depois da validação do fluxo básico e das restrições de privacidade.
+O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada, além dos recursos básicos de acessibilidade. Reconhecimento de fala e cálculo de rotas multimodais foram mantidos como possibilidades futuras, sujeitos ao diagnóstico e à viabilidade técnica.
 
 ## 6 Apoio ferramental e processo Scrum
 
@@ -119,6 +104,8 @@ Reconhecimento de fala, interpretação de destinos por LLM, cálculo de rota mu
 - **GitHub Issues:** uma issue por funcionalidade, defeito ou tarefa de documentação.
 - **GitHub Projects:** quadro Kanban associado ao repositório.
 - **Markdown:** documentação versionada junto ao projeto.
+
+O uso dessas ferramentas está detalhado no documento de [ferramentas para gestão](gestao/ferramentas-para-gestao.md).
 
 O quadro deverá usar as colunas `Backlog`, `Pronto para Sprint`, `Em andamento`, `Em revisão` e `Concluído`. Cada item deve apontar para uma issue e para o pull request correspondente quando houver código.
 

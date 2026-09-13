@@ -1,5 +1,16 @@
 ## Ponto de Ônibus Inteligente
 
-O [Possível nome para o ponto de ônibus inteligente] é uma alternativa desenvolvida por alunos de Ciência da Computação do IME-USP na matéria MAC0332 - Engenharia de Software - para a obtenção de rotas e democratizar o conhecimento do transporte público na capital de São Paulo. Tal aplicação rodaria nos totens dos pontos de ônibus a fim de aumentar a soberania nacional com o uso de softwares brasileiros, diminuindo a dependência de aplicativos internacionais, além de aumentar a acessibilidade de usuários de transporte público que não possuem um celular disponível.
+Este repositório contém a documentação e o desenvolvimento do projeto de um totem interativo de transporte urbano para pontos de ônibus de São Paulo.
 
-Para desenvolver a aplicação, usaremos a API do Olho Vivo da SPTrans, que oferece dados em tempo real sobre o monitoramento da frota de ônibus do transporte público municipal de São Paulo, além de informações acerca de linhas e itinerários. Com isso, o cálculo de rotas otimizadas em tempo real, usando como base os ônibus mais pertos, é possível.
+Documentação principal:
+
+- [Enunciado do trabalho em Markdown](docs/enunciado-trabalho.md)
+- [Enunciado original em DOCX](docs/enunciado-trabalho.docx)
+- [Entrega 1: definição do problema, API e planejamento inicial](docs/ENTREGA-1.md)
+- [Proposta resumida do projeto](docs/produto/projeto.md)
+- [Backlog inicial de funcionalidades](docs/produto/backlog.md)
+- [Mapa de empatia do passageiro](docs/produto/mapa-de-empatia/mapa-transeunte.md)
+- [Mapa de empatia do passageiro com deficiência visual](docs/produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
+- [Ferramentas para gestão do projeto](docs/gestao/ferramentas-para-gestao.md)
+
+O produto mínimo viável exibirá as linhas atendidas por um ponto, seus sentidos e as previsões de chegada usando a API do Olho Vivo da SPTrans. O fluxo terá foco em consulta rápida, alto contraste e uma alternativa de saída de áudio. O cálculo de rotas multimodais e o reconhecimento de fala ficam fora do primeiro incremento e serão avaliados depois do diagnóstico com usuários.
