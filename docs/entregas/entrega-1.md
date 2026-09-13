@@ -85,14 +85,14 @@ Passageiros que aguardam ônibus em pontos movimentados e precisam de uma respos
 
 Foram definidos dois perfis complementares para orientar as decisões de produto:
 
-- [Mapa de empatia do passageiro Arthur](produto/mapa-de-empatia/mapa-transeunte.md)
-- [Mapa de empatia do passageiro com deficiência visual Kleber](produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
+- [Mapa de empatia do passageiro Arthur](../produto/mapa-de-empatia/mapa-transeunte.md)
+- [Mapa de empatia do passageiro com deficiência visual Kleber](../produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
 
 Os perfis são personas de trabalho, não resultados de pesquisa. Eles servem para explicitar hipóteses que serão verificadas no diagnóstico.
 
 ## 5 Backlog inicial de funcionalidades
 
-O [backlog inicial](produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
+O [backlog inicial](../produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
 
 O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado. Recursos adicionais de acessibilidade são desejáveis, mas não condicionam a conclusão do fluxo principal. Reconhecimento de fala e planejamento de rotas estão fora desse incremento e só serão reavaliados após o diagnóstico e a análise de viabilidade técnica.
 
@@ -105,7 +105,7 @@ O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de ch
 - **GitHub Projects:** quadro Kanban associado ao repositório.
 - **Markdown:** documentação versionada junto ao projeto.
 
-O uso dessas ferramentas está detalhado no documento de [ferramentas para gestão](gestao/ferramentas-para-gestao.md).
+O uso dessas ferramentas está detalhado no documento de [ferramentas para gestão](../gestao/ferramentas-para-gestao.md).
 
 O quadro deverá usar as colunas `Backlog`, `Pronto para Sprint`, `Em andamento`, `Em revisão` e `Concluído`. Cada item deve apontar para uma issue e para o pull request correspondente quando houver código.
 

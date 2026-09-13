@@ -4,9 +4,9 @@ Este repositório contém a documentação e o desenvolvimento do projeto de um 
 
 Documentação principal:
 
-- [Enunciado do trabalho em Markdown](docs/enunciado-trabalho.md)
-- [Enunciado original em DOCX](docs/enunciado-trabalho.docx)
-- [Entrega 1: definição do problema, API e planejamento inicial](docs/ENTREGA-1.md)
+- [Enunciado do trabalho em Markdown](docs/enunciado/enunciado-trabalho.md)
+- [Enunciado original em DOCX](docs/enunciado/enunciado-trabalho.docx)
+- [Entrega 1: definição do problema, API e planejamento inicial](docs/entregas/entrega-1.md)
 - [Proposta resumida do projeto](docs/produto/projeto.md)
 - [Backlog inicial de funcionalidades](docs/produto/backlog.md)
 - [Mapa de empatia do passageiro](docs/produto/mapa-de-empatia/mapa-transeunte.md)
