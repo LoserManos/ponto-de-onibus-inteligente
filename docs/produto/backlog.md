@@ -12,6 +12,18 @@ Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produt
 
 ---
 
+## Pessoas consideradas e impacto na priorização
+
+As personas orientam a relação entre necessidades e funcionalidades do backlog:
+
+- **Arthur:** agilidade, segurança e consulta sem expor o celular. Essas necessidades reforçam F01, F02, F06 e F08.
+- **Kleber:** autonomia para pessoas com deficiência visual e retorno não visual. Essas necessidades reforçam F10 e F11.
+- **Fátima:** simplicidade, textos grandes, bom contraste, ritmo adequado da informação e baixa exigência de familiaridade digital. Essas necessidades reforçam F01, F09, F10 e F11.
+
+No MVP, a equipe prioriza o fluxo curto de consulta de linhas, sentidos e previsões em um ponto configurado. A legibilidade e a simplicidade devem orientar esse fluxo desde o início. O modo completo de alto contraste, a leitura em áudio e a interação por voz permanecem, respectivamente, em **Should Have** e **Could Have**, para serem implementados após a consulta básica se houver tempo e viabilidade técnica.
+
+---
+
 ## 📌 Visão Geral dos Épicos
 
 | ID | Épico | Descrição | Prioridade Geral |
@@ -50,11 +62,11 @@ Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produt
 ---
 
 ### Épico 03: Acessibilidade Universal & Interação por Voz
-> *Projetado primariamente para a persona Kleber (deficiente visual) e usuários da terceira idade.*
+> *Projetado primariamente para as personas Kleber (deficiente visual) e Fátima (idosa), além de outros usuários com baixa visão ou pouca familiaridade digital.*
 
 | ID | Funcionalidade | Prioridade |
 | :--- | :--- | :--- |
-| **F09** | Oferecer modo de alto contraste e textos legíveis. | **Should Have** |
+| **F09** | Oferecer modo de alto contraste, textos grandes e legíveis. | **Should Have** |
 | **F10** | Permitir a navegação sem depender exclusivamente de cores. | **Should Have** |
 | **F11** | Disponibilizar leitura em áudio das opções e previsões. | **Should Have** |
 | **F12** | Permitir interação por comandos de voz. | **Could Have** |
@@ -74,4 +86,4 @@ Nesta primeira entrega, o backlog apresenta apenas a estrutura inicial do produt
 
 ## Limites do primeiro incremento
 
-O MVP será concentrado em um ponto previamente configurado, permitindo consultar as linhas disponíveis, seus sentidos e as previsões de chegada. Recursos adicionais de acessibilidade serão desenvolvidos se houver tempo após o funcionamento do fluxo principal. Reconhecimento de fala e planejamento de rotas são features adicionais que poderemos trabalhar, caso o tempo permita.
+O MVP será concentrado em um ponto previamente configurado, permitindo consultar as linhas disponíveis, seus sentidos e as previsões de chegada. O fluxo básico deverá ser curto, claro e legível para pessoas com diferentes níveis de familiaridade digital. O modo completo de alto contraste, a leitura em áudio e a interação por voz serão desenvolvidos após o funcionamento do fluxo principal, se houver tempo e viabilidade técnica. Reconhecimento de fala e planejamento de rotas são funcionalidades adicionais que poderão ser trabalhadas posteriormente.

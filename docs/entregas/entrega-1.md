@@ -81,20 +81,23 @@ Passageiros que aguardam ônibus em pontos movimentados e precisam de uma respos
 - obter informação legível e, quando necessário, audível;
 - concluir a consulta em poucos passos, sem criar conta e sem entregar dados pessoais.
 
+As necessidades de Fátima reforçam a importância de um fluxo simples, textos grandes, bom contraste e tempo suficiente para compreender a informação. Essas necessidades orientam as funcionalidades de acessibilidade do backlog e serão consideradas na especificação da interface, mesmo que o modo completo de acessibilidade seja implementado após o fluxo básico do MVP.
+
 ## 4 Mapas de empatia
 
-Foram definidos dois perfis complementares para orientar as decisões de produto:
+Foram definidos três perfis complementares para orientar as decisões de produto:
 
 - [Mapa de empatia do passageiro Arthur](../produto/mapa-de-empatia/mapa-transeunte.md)
 - [Mapa de empatia do passageiro com deficiência visual Kleber](../produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
+- [Mapa de empatia da passageira idosa Fátima](../produto/mapa-de-empatia/mapa-transeunte-idoso.md)
 
-Os perfis são personas de trabalho utilizadas para representar necessidades relevantes dos públicos considerados pelo grupo.
+Os perfis são personas de trabalho utilizadas para representar necessidades relevantes dos públicos considerados pelo grupo. Arthur orienta a agilidade e a segurança durante a espera, Kleber orienta a autonomia sem depender de informação visual e Fátima orienta a simplicidade, a legibilidade e o ritmo adequado da informação para pessoas idosas.
 
 ## 5 Backlog inicial de funcionalidades
 
 O [backlog inicial](../produto/backlog.md) foi organizado em épicos e priorizado com a metodologia MoSCoW. Nesta entrega ele apresenta as funcionalidades em nível geral; histórias de usuário, critérios de aceitação e estimativas serão detalhados na Entrega 2.
 
-O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado. Recursos adicionais de acessibilidade são desejáveis, mas não condicionam a conclusão do fluxo principal. Reconhecimento de fala e planejamento de rotas poderão ser considerados se houver tempo e viabilidade técnica.
+As necessidades de Fátima reforçam F09, F10 e F11 no backlog: textos grandes e legíveis, navegação que não dependa apenas de cores e leitura em áudio. A interface do fluxo principal deverá manter poucos passos e linguagem clara para não exigir familiaridade com tecnologias digitais. O primeiro incremento prioriza a consulta de linhas, sentidos e previsões de chegada em um ponto previamente configurado; o modo completo de acessibilidade e a interação por voz permanecem priorizados para depois do funcionamento básico. Reconhecimento de fala e planejamento de rotas poderão ser considerados se houver tempo e viabilidade técnica.
 
 ## 6 Apoio ferramental e processo Scrum
 
