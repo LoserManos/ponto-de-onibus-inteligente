@@ -9,6 +9,7 @@ Documentação principal:
 - [Entrega 1: definição do problema, API e planejamento inicial](docs/entregas/entrega-1.md)
 - [Proposta resumida do projeto](docs/produto/projeto.md)
 - [Backlog inicial de funcionalidades](docs/produto/backlog.md)
+- [Histórias de Usuário (User Stories)](docs/produto/user-stories/README.md)
 - [Mapa de empatia do passageiro](docs/produto/mapa-de-empatia/mapa-transeunte.md)
 - [Mapa de empatia do passageiro com deficiência visual](docs/produto/mapa-de-empatia/mapa-transeunte-deficiente-visual.md)
 - [Mapa de empatia da passageira idosa](docs/produto/mapa-de-empatia/mapa-transeunte-idoso.md)
